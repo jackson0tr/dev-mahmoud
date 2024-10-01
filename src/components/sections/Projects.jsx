@@ -114,10 +114,31 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={(toggle === "fullstack").toString()}
-            onClick={() => setToggle("fullstack")}
+            active={(toggle === "ecommerce").toString()}
+            onClick={() => setToggle("ecommerce")}
           >
-            Full Stack
+            E-Commerce
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={(toggle === "lms").toString()}
+            onClick={() => setToggle("lms")}
+          >
+            E-Learning
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={(toggle === "restaurant").toString()}
+            onClick={() => setToggle("restaurant")}
+          >
+            Restaurant
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={(toggle === "saas").toString()}
+            onClick={() => setToggle("saas")}
+          >
+            Saas
           </ToggleButton>
           <Divider />
           <ToggleButton
