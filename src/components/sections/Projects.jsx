@@ -142,6 +142,13 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
+            active={(toggle === "news").toString()}
+            onClick={() => setToggle("news")}
+          >
+            News Site
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
             active={(toggle === "landing").toString()}
             onClick={() => setToggle("landing")}
           >
