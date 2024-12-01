@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 
@@ -127,10 +127,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_6z9a4lf",
-        "template_hl9y4bm",
+        "service_r9mst5o",
+        "template_q20j5my",
         form.current,
-        "SPBtO1a3e44bxjIq2"
+        "Lr6yRA45ZL80El5wb"
       )
       .then(
         () => {
