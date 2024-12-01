@@ -105,26 +105,59 @@ const ContactButton = styled.input`
   font-weight: 600;
 `;
 
+const Toast = styled.div`
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: ${(props) => (props.show ? 1 : 0)};
+  transition: opacity 0.5s ease;
+`;
+
 const Contact = () => {
   const form = useRef();
+  const [toastVisible, setToastVisible] = useState(false);
+  
   const handelSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_6z9a4lf",
+        "template_hl9y4bm",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "SPBtO1a3e44bxjIq2"
       )
       .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.result();
+        () => {
+          setToastVisible(true);
+          setTimeout(() => setToastVisible(false), 3000); // Hide toast after 3 seconds
+          form.current.reset();
         },
         (error) => {
-          alert(error);
+          alert("An error occurred: " + error.text);
         }
       );
+    // emailjs
+    //   .sendForm(
+    //     "service_tox7kqs",
+    //     "template_nv7k7mj",
+    //     form.current,
+    //     "SybVGsYS52j2TfLbi"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       alert("Message Sent");
+    //       form.current.result();
+    //     },
+    //     (error) => {
+    //       alert(error);
+    //     }
+    //   );
   };
   return (
     <Container id="Education">
@@ -139,12 +172,13 @@ const Contact = () => {
         </Desc>
         <ContactForm onSubmit={handelSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+          <ContactInput required placeholder="Your Email" name="from_email" />
+          <ContactInput required placeholder="Your Name" name="from_name" />
+          <ContactInput required placeholder="Subject" name="subject" />
+          <ContactInputMessage required placeholder="Message" name="message" rows={4} />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        <Toast show={toastVisible}>Mail sent successfully!</Toast>
       </Wrapper>
     </Container>
   );
