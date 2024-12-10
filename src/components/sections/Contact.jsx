@@ -99,6 +99,7 @@ const ContactButton = styled.input`
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
+  cursor: pointer;
   border: none;
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
@@ -170,7 +171,7 @@ const Contact = () => {
         >
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handelSubmit}>
+        <ContactForm ref={form} onSubmit={handelSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput required placeholder="Your Email" name="from_email" />
           <ContactInput required placeholder="Your Name" name="from_name" />

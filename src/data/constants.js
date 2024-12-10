@@ -34,6 +34,8 @@ import cic from '../images/cic.webp'
 import mostaql from '../images/mostaql.webp'
 import upwork from '../images/upwork.webp'
 import sockit from '../images/sockit.webp'
+import figma from '../images/figma.svg'
+import swagger from '../images/swagger.svg'
 
 export const Bio = {
   name: "Mahmoud Mohamed",
@@ -100,6 +102,10 @@ export const skills = [
       {
         name: "Material UI",
         image: materialui
+      },
+      {
+        name: "Figma",
+        image: figma
       },
       {
         name: "Sass",
@@ -207,6 +213,10 @@ export const skills = [
       {
         name: "Postman",
         image: postman
+      },
+      {
+        name: "Swagger",
+        image: swagger
       },
       {
         name: "Jira",
@@ -326,6 +336,38 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Little Ocean",
+    description: "Restaurant Website",
+    image: require('../images/littleocean.webp'),
+    tags: [
+      "React",
+      "JavaScript",
+      "Tailwindcss",
+    ],
+    category: "restaurant",
+    webapp: "https://littleocean.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Foodora",
+    description: "Food Ordering Website",
+    image: require('../images/foodora.webp'),
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwindcss",
+      "Shaden UI",
+      "Express",
+      "MongoDB",
+      "Cloudinary",
+      "Multer",
+      "Stripe",
+    ],
+    category: "restaurant",
+    webapp: "https://foodora-v1.vercel.app/",
+  },
+  {
+    id: 5,
     title: "RestauMaster",
     description: "Food Ordering Website",
     image: require('../images/restaumaster.webp'),
@@ -343,19 +385,6 @@ export const projects = [
     ],
     category: "restaurant",
     webapp: "https://restaumaster.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Little Ocean",
-    description: "Restaurant Website",
-    image: require('../images/littleocean.webp'),
-    tags: [
-      "React",
-      "JavaScript",
-      "Tailwindcss",
-    ],
-    category: "restaurant",
-    webapp: "https://littleocean.vercel.app/",
   },
   {
     id: 5,
