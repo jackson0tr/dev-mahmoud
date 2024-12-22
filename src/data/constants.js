@@ -390,7 +390,7 @@ export const projects = [
     id: 7,
     title: "Travaillons",
     description: "Job Website",
-    image: require('../images/travaillons.png'),
+    image: require('../images/travaillons.jpeg'),
     tags: [
       "Next",
       "JavaScript",
