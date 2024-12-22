@@ -280,7 +280,7 @@ export const projects = [
     id: 0,
     title: "Lerko",
     description: "LMS Website",
-    image: require('../images/lerko.webp'),
+    image: require('../images/lerko.jpeg'),
     tags: [
       "Next",
       "TypeScript",
@@ -300,7 +300,7 @@ export const projects = [
     id: 1,
     title: "Dotte",
     description: "E-commerce Website",
-    image: require('../images/dotte.webp'),
+    image: require('../images/dotte.jpeg'),
     tags: [
       "React",
       "Yarn",
@@ -322,7 +322,7 @@ export const projects = [
     id: 3,
     title: "Little Ocean",
     description: "Restaurant Website",
-    image: require('../images/littleocean.webp'),
+    image: require('../images/littleocean.jpeg'),
     tags: [
       "React",
       "JavaScript",
@@ -335,7 +335,7 @@ export const projects = [
     id: 3,
     title: "Foodora",
     description: "Food Ordering Website",
-    image: require('../images/foodora.webp'),
+    image: require('../images/foodora.jpeg'),
     tags: [
       "React",
       "TypeScript",
@@ -354,7 +354,7 @@ export const projects = [
     id: 5,
     title: "RestauMaster",
     description: "Food Ordering Website",
-    image: require('../images/restaumaster.webp'),
+    image: require('../images/restaumaster.jpeg'),
     tags: [
       "React",
       "Vite",
@@ -374,7 +374,7 @@ export const projects = [
     id: 2,
     title: "Mubasher Masr",
     description: "News Website",
-    image: require('../images/mubasher.webp'),
+    image: require('../images/mubasher.jpeg'),
     tags: [
       "Next",
       "JavaScript",
@@ -406,7 +406,7 @@ export const projects = [
     id: 5,
     title: "US News",
     description: "News Website",
-    image: require('../images/usnews.webp'),
+    image: require('../images/usnews.jpeg'),
     tags: [
       "React",
       "Vite",
@@ -426,7 +426,7 @@ export const projects = [
     id: 6,
     title: "ExchanSwap",
     description: "Saas Website",
-    image: require('../images/exchanswap.webp'),
+    image: require('../images/exchanswap.jpeg'),
     tags: [
       "Next",
       "TypeScript",
@@ -440,7 +440,7 @@ export const projects = [
     id: 7,
     title: "Bonic",
     description: "Landing Page",
-    image: require('../images/bonic.webp'),
+    image: require('../images/bonic.jpeg'),
     tags: [
       "React",
       "JavaScript",
