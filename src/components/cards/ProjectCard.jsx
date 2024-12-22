@@ -27,6 +27,22 @@ const Image = styled.img`
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
+const Tag = styled.span`
+  background-color: ${({ theme }) => theme.primary + '22'}; /* Light background of the primary color */
+  color: ${({ theme }) => theme.primary}; /* Primary color text */
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+`;
 const Tags = styled.div`
   width: 100%;
   display: flex;
@@ -53,15 +69,6 @@ const Title = styled.div`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-`;
-const Date = styled.div`
-  font-size: 12px;
-  margin-left: 2px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
 `;
 const Description = styled.div`
   font-weight: 400;
@@ -114,9 +121,11 @@ const ProjectCard = ({ project }) => {
       <Button href={project.webapp} target="_blank">
         View
       </Button>
-      {/* <Tags>
-        {project.tags}
-      </Tags> */}
+      <Tags>
+        {project.tags?.map((tag, index) => (
+          <Tag key={index}>{tag}</Tag>
+        ))}
+      </Tags>
     </Card>
   );
 };
