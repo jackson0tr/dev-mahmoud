@@ -193,18 +193,18 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
+            active={(toggle === "job").toString()}
+            onClick={() => setToggle("job")}
+          >
+            Job Site
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
             active={(toggle === "landing").toString()}
             onClick={() => setToggle("landing")}
           >
             Landing Page
           </ToggleButton>
-          {/* <Divider />
-          <ToggleButton
-            active={(toggle === "backend").toString()}
-            onClick={() => setToggle("backend")}
-          >
-            Backend
-          </ToggleButton> */}
         </ToggleButtonGroup>
 
         <CardContainer>
