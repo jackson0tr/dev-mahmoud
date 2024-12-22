@@ -50,15 +50,25 @@ const Desc = styled.div`
 
 const ToggleButtonGroup = styled.div`
   display: flex;
+  flex-wrap: wrap;
   border: 1.5px solid ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primary};
   font-size: 16px;
   border-radius: 12px;
   font-weight: 500;
   margin: 22px 0;
-  overflow-x: auto; 
+  overflow-x: auto;
   white-space: nowrap;
   padding: 8px 0;
+  gap: 8px;
+  justify-content: center;
+
+  @media (max-width: 960px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
   @media (max-width: 768px) {
     font-size: 12px;
     gap: 6px;
@@ -84,12 +94,52 @@ const ToggleButton = styled.div`
 `;
 
 const Divider = styled.div`
-  width: 1.5px;
-  background: ${({ theme }) => theme.primary};
-  @media (max-width: 768px) {
-    display: none;
-  }
+  display: none;
 `;
+
+
+// const ToggleButtonGroup = styled.div`
+//   display: flex;
+//   border: 1.5px solid ${({ theme }) => theme.primary};
+//   color: ${({ theme }) => theme.primary};
+//   font-size: 16px;
+//   border-radius: 12px;
+//   font-weight: 500;
+//   margin: 22px 0;
+//   overflow-x: auto; 
+//   white-space: nowrap;
+//   padding: 8px 0;
+//   @media (max-width: 768px) {
+//     font-size: 12px;
+//     gap: 6px;
+//   }
+// `;
+
+// const ToggleButton = styled.div`
+//   padding: 8px 18px;
+//   border-radius: 6px;
+//   cursor: pointer;
+//   &:hover {
+//     background: ${({ theme }) => theme.primary + 20};
+//   }
+//   @media (max-width: 768px) {
+//     padding: 6px 12px;
+//     border-radius: 4px;
+//   }
+//   ${({ active, theme }) =>
+//     active &&
+//     `
+//     background:  ${theme.primary + 20};
+//   `}
+// `;
+
+// const Divider = styled.div`
+//   width: 1.5px;
+//   background: ${({ theme }) => theme.primary};
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// `;
 
 
 // const ToggleButtonGroup = styled.div`

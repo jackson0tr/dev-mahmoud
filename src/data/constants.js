@@ -392,7 +392,7 @@ export const projects = [
     description: "Job Website",
     image: require('../images/travaillons.jpeg'),
     tags: [
-      "Next",
+      "React",
       "JavaScript",
       "Tailwindcss",
       "Express",
