@@ -278,6 +278,21 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Suburbia",
+    description: "Landing Page Website",
+    image: require('../images/suburbia.webp'),
+    tags: [
+      "Next",
+      "Threejs",
+      "GSAP",
+      "TypeScript",
+      "Tailwindcss",
+    ],
+    category: "landing",
+    webapp: "https://suburbia.vercel.app",
+  },
+  {
+    id: 1,
     title: "Lerko",
     description: "LMS Website",
     image: require('../images/lerko.jpeg'),
@@ -297,7 +312,7 @@ export const projects = [
     webapp: "https://lerko.vercel.app",
   },
   {
-    id: 1,
+    id: 2,
     title: "Dotte",
     description: "E-commerce Website",
     image: require('../images/dotte.jpeg'),
@@ -332,7 +347,7 @@ export const projects = [
     webapp: "https://littleocean.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Foodora",
     description: "Food Ordering Website",
     image: require('../images/foodora.jpeg'),
@@ -371,7 +386,7 @@ export const projects = [
     webapp: "https://restaumaster.vercel.app",
   },
   {
-    id: 2,
+    id: 6,
     title: "Mubasher Masr",
     description: "News Website",
     image: require('../images/mubasher.jpeg'),
@@ -403,7 +418,7 @@ export const projects = [
     webapp: "https://travaillons.vercel.app",
   },
   {
-    id: 5,
+    id: 8,
     title: "US News",
     description: "News Website",
     image: require('../images/usnews.jpeg'),
@@ -423,7 +438,7 @@ export const projects = [
     webapp: "https://blog-44.vercel.app",
   },
   {
-    id: 6,
+    id: 9,
     title: "ExchanSwap",
     description: "Saas Website",
     image: require('../images/exchanswap.jpeg'),
@@ -437,7 +452,7 @@ export const projects = [
     webapp: "https://exchanswap.vercel.app",
   },
   {
-    id: 7,
+    id: 10,
     title: "Bonic",
     description: "Landing Page",
     image: require('../images/bonic.jpeg'),
