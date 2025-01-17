@@ -313,6 +313,21 @@ export const projects = [
   },
   {
     id: 2,
+    title: "The Graces",
+    description: "Landing Page Website",
+    image: require('../images/the-graces.jpg'),
+    tags: [
+      "Html",
+      "Css",
+      "JavaScript",
+      "Three",
+      "Webpack",
+    ],
+    category: "landing",
+    webapp: "https://the-graces.vercel.app",
+  },
+  {
+    id: 3,
     title: "Lerko",
     description: "LMS Website",
     image: require('../images/lerko.jpeg'),
@@ -330,21 +345,6 @@ export const projects = [
     ],
     category: "lms",
     webapp: "https://lerko.vercel.app",
-  },
-  {
-    id: 3,
-    title: "The Graces",
-    description: "Landing Page Website",
-    image: require('../images/the-graces.jpg'),
-    tags: [
-      "Html",
-      "Css",
-      "JavaScript",
-      "Three",
-      "Webpack",
-    ],
-    category: "landing",
-    webapp: "https://the-graces.vercel.app",
   },
   {
     id: 4,
