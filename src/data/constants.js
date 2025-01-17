@@ -333,6 +333,21 @@ export const projects = [
   },
   {
     id: 3,
+    title: "The Graces",
+    description: "Landing Page Website",
+    image: require('../images/the-graces.jpg'),
+    tags: [
+      "Html",
+      "Css",
+      "JavaScript",
+      "Three",
+      "Webpack",
+    ],
+    category: "landing",
+    webapp: "https://the-graces.vercel.app",
+  },
+  {
+    id: 4,
     title: "Dotte",
     description: "E-commerce Website",
     image: require('../images/dotte.jpeg'),
@@ -354,7 +369,7 @@ export const projects = [
     webapp: "https://dotte.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Little Ocean",
     description: "Restaurant Website",
     image: require('../images/littleocean.jpeg'),
@@ -367,7 +382,7 @@ export const projects = [
     webapp: "https://littleocean.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Foodora",
     description: "Food Ordering Website",
     image: require('../images/foodora.jpeg'),
@@ -386,7 +401,7 @@ export const projects = [
     webapp: "https://foodora-v1.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "RestauMaster",
     description: "Food Ordering Website",
     image: require('../images/restaumaster.jpeg'),
@@ -406,7 +421,7 @@ export const projects = [
     webapp: "https://restaumaster.vercel.app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Mubasher Masr",
     description: "News Website",
     image: require('../images/mubasher.jpeg'),
@@ -422,7 +437,7 @@ export const projects = [
     webapp: "https://mubashermasr.vercel.app",
   },
   {
-    id: 8,
+    id: 9,
     title: "Travaillons",
     description: "Job Website",
     image: require('../images/travaillons.jpeg'),
@@ -438,7 +453,7 @@ export const projects = [
     webapp: "https://travaillons.vercel.app",
   },
   {
-    id: 9,
+    id: 10,
     title: "US News",
     description: "News Website",
     image: require('../images/usnews.jpeg'),
@@ -458,7 +473,7 @@ export const projects = [
     webapp: "https://blog-44.vercel.app",
   },
   {
-    id: 10,
+    id: 11,
     title: "ExchanSwap",
     description: "Saas Website",
     image: require('../images/exchanswap.jpeg'),
@@ -472,7 +487,7 @@ export const projects = [
     webapp: "https://exchanswap.vercel.app",
   },
   {
-    id: 11,
+    id: 12,
     title: "Bonic",
     description: "Landing Page",
     image: require('../images/bonic.jpeg'),
