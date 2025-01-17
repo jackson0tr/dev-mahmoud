@@ -36,6 +36,7 @@ import upwork from '../images/upwork.webp'
 import sockit from '../images/sockit.webp'
 import figma from '../images/figma.svg'
 import swagger from '../images/swagger.svg'
+import postgresql from '../images/postgresql.svg'
 
 export const Bio = {
   name: "Mahmoud Mohamed",
@@ -147,6 +148,10 @@ export const skills = [
       {
         name: "MongoDB",
         image: mongo
+      },
+      {
+        name: "PostgreSQL",
+        image: postgresql
       },
       {
         name: "Cloudinary",
@@ -293,6 +298,21 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Fizzi",
+    description: "Landing Page Website",
+    image: require('../images/fizzi.webp'),
+    tags: [
+      "Next",
+      "Threejs",
+      "GSAP",
+      "TypeScript",
+      "Tailwindcss",
+    ],
+    category: "landing",
+    webapp: "https://fizzi-psi.vercel.app",
+  },
+  {
+    id: 2,
     title: "Lerko",
     description: "LMS Website",
     image: require('../images/lerko.jpeg'),
@@ -312,7 +332,7 @@ export const projects = [
     webapp: "https://lerko.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Dotte",
     description: "E-commerce Website",
     image: require('../images/dotte.jpeg'),
@@ -334,7 +354,7 @@ export const projects = [
     webapp: "https://dotte.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Little Ocean",
     description: "Restaurant Website",
     image: require('../images/littleocean.jpeg'),
@@ -347,7 +367,7 @@ export const projects = [
     webapp: "https://littleocean.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Foodora",
     description: "Food Ordering Website",
     image: require('../images/foodora.jpeg'),
@@ -366,7 +386,7 @@ export const projects = [
     webapp: "https://foodora-v1.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "RestauMaster",
     description: "Food Ordering Website",
     image: require('../images/restaumaster.jpeg'),
@@ -386,7 +406,7 @@ export const projects = [
     webapp: "https://restaumaster.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     title: "Mubasher Masr",
     description: "News Website",
     image: require('../images/mubasher.jpeg'),
@@ -402,7 +422,7 @@ export const projects = [
     webapp: "https://mubashermasr.vercel.app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Travaillons",
     description: "Job Website",
     image: require('../images/travaillons.jpeg'),
@@ -418,7 +438,7 @@ export const projects = [
     webapp: "https://travaillons.vercel.app",
   },
   {
-    id: 8,
+    id: 9,
     title: "US News",
     description: "News Website",
     image: require('../images/usnews.jpeg'),
@@ -438,7 +458,7 @@ export const projects = [
     webapp: "https://blog-44.vercel.app",
   },
   {
-    id: 9,
+    id: 10,
     title: "ExchanSwap",
     description: "Saas Website",
     image: require('../images/exchanswap.jpeg'),
@@ -452,7 +472,7 @@ export const projects = [
     webapp: "https://exchanswap.vercel.app",
   },
   {
-    id: 10,
+    id: 11,
     title: "Bonic",
     description: "Landing Page",
     image: require('../images/bonic.jpeg'),
