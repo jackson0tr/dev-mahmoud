@@ -121,11 +121,11 @@ const ProjectCard = ({ project }) => {
       <Button href={project.webapp} target="_blank">
         View
       </Button>
-      <Tags>
+      {/* <Tags>
         {project.tags?.map((tag, index) => (
           <Tag key={index}>{tag}</Tag>
         ))}
-      </Tags>
+      </Tags> */}
     </Card>
   );
 };
