@@ -136,10 +136,10 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={(toggle === "lms").toString()}
-            onClick={() => setToggle("lms")}
+            active={(toggle === "systems").toString()}
+            onClick={() => setToggle("systems")}
           >
-            E-Learning
+            LMS/ERP/CMS
           </ToggleButton>
           <Divider />
           <ToggleButton
@@ -162,13 +162,13 @@ const Projects = () => {
           >
             News Site
           </ToggleButton>
-          <Divider />
+          {/* <Divider />
           <ToggleButton
             active={(toggle === "job").toString()}
             onClick={() => setToggle("job")}
           >
             Job Site
-          </ToggleButton>
+          </ToggleButton> */}
           <Divider />
           <ToggleButton
             active={(toggle === "landing").toString()}

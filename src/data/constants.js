@@ -358,7 +358,7 @@ export const projects = [
       "Redis",
       "Stripe",
     ],
-    category: "lms",
+    category: "systems",
     webapp: "https://lerko.vercel.app",
   },
   {
@@ -464,7 +464,7 @@ export const projects = [
       "MongoDb",
       "Cloudinary",
     ],
-    category: "job",
+    category: "systems",
     webapp: "https://travaillons.vercel.app",
   },
   {
