@@ -176,6 +176,13 @@ const Projects = () => {
           >
             Landing Page
           </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={(toggle === "others").toString()}
+            onClick={() => setToggle("others")}
+          >
+            Others
+          </ToggleButton>
         </ToggleButtonGroup>
 
         <CardContainer>
