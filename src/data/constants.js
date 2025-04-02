@@ -233,22 +233,6 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 40,
-    title: "DailyTM",
-    description: "Saas Website",
-    image: require('../images/daily-tm.png'),
-    tags: [
-      "Next",
-      "TypeScript",
-      "shadcn/ui",
-      "Next.js server/ui",
-      "Tailwindcss",
-      "Framer Motion",
-    ],
-    category: "saas",
-    webapp: "https://daily-tm.vercel.app",
-  },
-  {
     id: 0,
     img: mostaql,
     role: "Full Stack Developer",
@@ -297,6 +281,22 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 40,
+    title: "DailyTM",
+    description: "Saas Website",
+    image: require('../images/daily-tm.png'),
+    tags: [
+      "Next",
+      "TypeScript",
+      "shadcn/ui",
+      "Next.js server/ui",
+      "Tailwindcss",
+      "Framer Motion",
+    ],
+    category: "saas",
+    webapp: "https://daily-tm.vercel.app",
+  },
   {
     id: 0,
     title: "Suburbia",
